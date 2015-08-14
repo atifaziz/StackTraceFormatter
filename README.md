@@ -96,14 +96,14 @@ You could then markup the frames of the above stack trace in HTML like this:
 
 ```c#
 var html = "<pre><code>"
-            + StackTraceFormatter.FormatHtml(
-                Environment.StackTrace,
-                new StackTraceHtmlFragments
-                {
-                    BeforeFrame = "<span class='frame'>",
-                    AfterFrame  = "</span>",
-                })
-            + "</code></pre>";
+         + StackTraceFormatter.FormatHtml(
+             Environment.StackTrace,
+             new StackTraceHtmlFragments
+             {
+                 BeforeFrame = "<span class='frame'>",
+                 AfterFrame  = "</span>",
+             })
+         + "</code></pre>";
 ```
 
 The content of the `html` string after execution of the above line would be:
@@ -132,16 +132,16 @@ emphasises parameter names:
 
 ```c#
 var html = "<pre><code>"
-            + StackTraceFormatter.FormatHtml(
-                Environment.StackTrace,
-                new StackTraceHtmlFragments
-                {
-                    BeforeType          = "<strong>",    // highlight type
-                    AfterMethod         = "</strong>",   // ...and method
-                    BeforeParameterName = "<em>",        // emphasise parameter names
-                    AfterParameterName  = "</em>",
-                })
-            + "</code></pre>";
+         + StackTraceFormatter.FormatHtml(
+             Environment.StackTrace,
+             new StackTraceHtmlFragments
+             {
+                 BeforeType          = "<strong>",    // highlight type
+                 AfterMethod         = "</strong>",   // ...and method
+                 BeforeParameterName = "<em>",        // emphasise parameter names
+                 AfterParameterName  = "</em>",
+             })
+         + "</code></pre>";
 ```
 
 And now the `html` variable would read:
