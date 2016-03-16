@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>StackTraceFormatter.Source</id>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <title>StackTraceFormatter (C# Source)</title>
         <authors>Atif Aziz</authors>
         <owners>Atif Aziz</owners>
@@ -13,10 +13,10 @@
         <description>Formatter for .NET and Mono stack traces.</description>
         <language>en-US</language>
         <tags>stack trace formatter diagnostics exception</tags>
-        <releaseNotes>Initial release</releaseNotes>
+        <releaseNotes>Bug fix release. See issue #2 (https://github.com/atifaziz/StackTraceFormatter/issues/2) for more information.</releaseNotes>
         <dependencies>
             <dependency id="MoreLinq.Source.MoreEnumerable.Pairwise" version="[1.0.1,2)" />
-            <dependency id="StackTraceParser.Source" version="[1.1.1,2)" />
+            <dependency id="StackTraceParser.Source" version="[1.2.0,2)" />
         </dependencies>
     </metadata>
     <files>
